@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-o",
+      "main",
+      "src/main.c"
+    ],
+    "directory": "/home/luke/Documents/Programming/Projects/xml",
+    "file": "/home/luke/Documents/Programming/Projects/xml/src/main.c",
+    "output": "/home/luke/Documents/Programming/Projects/xml/main"
+  }
+]

@@ -1,0 +1,7 @@
+<xml>
+<person> <firstname>James</firstname><lastname>Kirk</lastname></person>
+<person>
+<firstname>Luke</firstname>
+<lastname>Skywalker</lastname>
+</person>
+</xml>
