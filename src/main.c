@@ -12,6 +12,7 @@
 #include "queries.h"
 
 int main(int const argc, char const*const argv[argc]) {
+	
 	/* arg handling */
 	if (argc <= 1) handle_wrong_argc_num(argc);
 

@@ -2,6 +2,7 @@
 #define PARSER_H
 
 #include <stddef.h>
+#include <stdbool.h>
 #include "tokeniser.h"
 
 /* Parsing */
