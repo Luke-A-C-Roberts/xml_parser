@@ -40,7 +40,7 @@ int main(int const argc, char const*const argv[argc]) {
 		person_item = person_item->next;
     }
 
-    printf("People: %zu\n", person_list.size);
+    (void)printf("People: %zu\n", person_list.size);
 
     free_nodelist(person_list);
     free_nodetree((Node *const)root);

@@ -15,7 +15,7 @@ static char *copy_regmatch_data(char *const text_at_pos, regmatch_t const regmat
 	ptrdiff_t const regmatch_sz = (regmatch.rm_eo - end_offset) - (regmatch.rm_so + start_offset);
 	char *tagstr = malloc(regmatch_sz + 1);
 	tagstr[regmatch_sz] = '\0';
-	strncpy(tagstr, &text_at_pos[regmatch.rm_so + start_offset], regmatch_sz);
+	(void)strncpy(tagstr, &text_at_pos[regmatch.rm_so + start_offset], regmatch_sz);
 	return tagstr;
 }
 
@@ -31,7 +31,7 @@ static bool next_token(char const*restrict const text, Token *restrict const out
 	if (text != (void *)0) {
 		_text_sz = strlen(text);
 		_text = malloc(_text_sz + 1);
-		strcpy(_text, text);
+		(void)strcpy(_text, text);
 		_text_pos = 0UL;
 
 		// compile regex expressions (regex_t vars stored globally)
