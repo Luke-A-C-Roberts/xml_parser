@@ -7,15 +7,15 @@
 
 /* error handlers */
 extern _Noreturn int handle_wrong_argc_num(int const num) {
-	fprintf(stderr, "incorrect number of args: %d provided, 1 exepcted!", num - 1);
+	(void)fprintf(stderr, "incorrect number of args: %d provided, 1 exepcted!", num - 1);
 	exit(EXIT_FAILURE);
 }
 
 extern _Noreturn int handle_regcomp_err(int const errcode, regex_t const *preg) {
 	static const size_t errbuf_sz = 64;
 	char errbuf[errbuf_sz];
-	regerror(errcode, preg, errbuf, errbuf_sz);
-	fprintf(stderr, "%s\n", errbuf);
+	(void)regerror(errcode, preg, errbuf, errbuf_sz);
+	(void)fprintf(stderr, "%s\n", errbuf);
 	exit(EXIT_FAILURE);
 }
 
