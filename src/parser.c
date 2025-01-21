@@ -28,13 +28,9 @@ static Node *pop_nodelist(NodeList *const list) {
 	return node;
 }
 
-static inline unsigned long long most_sig_bit(size_t const size) {
-	return 1 << ((8 * size) - 1);
-}
-
 static void append_to_node_children(Node *restrict const node, Node *restrict const subnode) {
 	if (node->label == LEAF) handle_leaf_node_append();
-	if (node->sub_cap < most_sig_bit(sizeof(size_t)) && node->sub_sz + 1 >= node->sub_cap) {
+	if (node->sub_sz + 1 >= node->sub_cap) {
 		node->sub_cap *= 2;
 		node->sub = realloc(node->sub, node->sub_cap * sizeof(Node *));
 		if (node->sub == (void *)0) handle_realloc_err("node->sub");
