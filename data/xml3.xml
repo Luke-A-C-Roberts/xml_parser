@@ -1,6 +1,10 @@
 <root>
   <importance>needed</importance>
   <born>
+    <person>
+      <firstname>Ron</firstname>
+      <lastname>Weasly</lastname>
+    </person>
     <obtain>
       <satellites>
         <review>
@@ -22,10 +26,18 @@
               <hand>560777048.3532972</hand>
             </black>
             <amount>-1303693399.4678059</amount>
+            <person>
+              <firstname>Harry</firstname>
+              <lastname>Potter</lastname>
+            </person>
             <shout>partly</shout>
           </including>
           <bit>watch</bit>
           <his>audience</his>
+          <person>
+            <firstname>Albus</firstname>
+            <lastname>Dumbledor</lastname>
+          </person>
         </folks>
         <station>699535119.2369843</station>
       </development>
